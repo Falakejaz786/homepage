@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survivor - Homepage</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: black;
+        color: antiquewhite;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+
+        align-items: center;
+      }
+
+      header .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      header nav {
+        display: flex;
+        gap: 15px;
+      }
+
+      header nav a {
+        color: antiquewhite;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      header nav a:hover {
+        text-decoration: underline;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 60px 20px;
+        background: url("https://c4.wallpaperflare.com/wallpaper/768/639/692/ark-survival-evolved-sunset-wallpaper-preview.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        color: antiquewhite;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+        margin: 20px 0;
+      }
+
+      .hero p {
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+
+      .hero button {
+        background-color: antiquewhite;
+        color: black;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      .hero button:hover {
+        background-color: #f1f1f1;
+      }
+
+      .features {
+        padding: 40px 20px;
+        text-align: center;
+        background-color: rgb(51, 47, 47);
+      }
+
+      .features h2 {
+        color: antiquewhite;
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      .features .feature-list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+
+      .features .feature-item {
+        background-color: antiquewhite;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        text-align: center;
+      }
+
+      .features .feature-item img {
+        width: 50px;
+        margin-bottom: 10px;
+      }
+
+      footer {
+        background-color: black;
+        color: antiquewhite;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      footer a {
+        color: antiquewhite;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+
+    <header>
+      <div class="logo">Survivor</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="https://v6f735.csb.app/t">Register</a>
+        <a href="https://fxdygp.csb.app/">Login</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Welcome to Survivor!</h1>
+      <p>Connect with others to survive...</p>
+      <button>Stay Alert!!</button>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <h2>Features</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPpTaU8990jleob0hu7HmZbvORzoWz8Em1uw&s"
+            alt="Chat Icon"
+          />
+          <a href="https://hyltkq.csb.app/"><h3>Instant Messaging</h3></a>
+          <p>Real-time chat with friends and family.</p>
+        </div>
+        <div class="feature-item">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Video Call Icon"
+          />
+          <a href="https://6rw7wd.csb.app/"><h3>Monster detector</h3></a>
+          <p>Detect any monsters nearby.</p>
+        </div>
+        <div class="feature-item">
+          <img
+            src="data:image/png;base64,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"
+            alt="File Sharing Icon"
+          />
+          <a href="https://873ncr.csb.app/"><h3>Trading</h3></a>
+          <p>Exchange resources.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>
+        &copy; 2024 ChatConnect. All rights reserved.
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+      </p>
+    </footer>
+  </body>
+</html>
